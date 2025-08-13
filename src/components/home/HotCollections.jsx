@@ -191,7 +191,7 @@ const HotCollections = () => {
           </div>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         @keyframes pulse {
           0% {
             opacity: 1;
