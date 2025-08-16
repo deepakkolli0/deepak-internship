@@ -97,6 +97,18 @@
   color: #333;
 }
 
+/* Follow/Unfollow Button Styles */
+.btn-secondary {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268 !important;
+  border-color: #545b62 !important;
+}
+
 /* Hot Collections Carousel Styles */
 .hot__collections--carousel {
   position: relative;
