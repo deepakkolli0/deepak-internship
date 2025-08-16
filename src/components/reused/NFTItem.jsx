@@ -9,15 +9,17 @@ const NFTItem = ({
   showShareButtons = true,
   showBuyButton = true,
 }) => {
+  const authorLink = item.authorId ? `/author/${item.authorId}` : "/author";
+
   return (
     <div className={className}>
       <div className="nft__item" style={{ padding: "20px" }}>
         <div className="author_list_pp">
           <Link
-            to="/author"
+            to={authorLink}
             data-bs-toggle="tooltip"
             data-bs-placement="top"
-            title="Creator: Monica Lucas"
+            title={`Creator: ${item.authorName || "Unknown Author"}`}
           >
             <img className="lazy" src={item.authorImage} alt={item.title} />
             <i className="fa fa-check"></i>

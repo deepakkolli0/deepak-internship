@@ -247,7 +247,7 @@ const ItemDetails = () => {
                       <h6>Owner</h6>
                       <div className="item__details--author">
                         <div className="item__details--author__avatar">
-                          <Link to="/author">
+                          <Link to={`/author/${nftData.authorId}`}>
                             <img
                               className="lazy"
                               src={nftData.authorImage}
@@ -257,7 +257,9 @@ const ItemDetails = () => {
                           </Link>
                         </div>
                         <div className="item__details--author__info">
-                          <Link to="/author">NFT Owner</Link>
+                          <Link to={`/author/${nftData.authorId}`}>
+                            NFT Owner
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -268,7 +270,7 @@ const ItemDetails = () => {
                       <h6>Creator</h6>
                       <div className="item__details--author">
                         <div className="item__details--author__avatar">
-                          <Link to="/author">
+                          <Link to={`/author/${nftData.authorId}`}>
                             <img
                               className="lazy"
                               src={nftData.authorImage}
@@ -278,7 +280,9 @@ const ItemDetails = () => {
                           </Link>
                         </div>
                         <div className="item__details--author__info">
-                          <Link to="/author">NFT Creator</Link>
+                          <Link to={`/author/${nftData.authorId}`}>
+                            NFT Creator
+                          </Link>
                         </div>
                       </div>
                     </div>
