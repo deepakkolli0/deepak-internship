@@ -136,43 +136,82 @@ export const ExploreSkeletonList = () => {
 
 export const ItemDetailsSkeleton = () => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <div className="nft__item_wrap">
-            <Skeleton width="100%" height="400px" borderRadius="10px" />
-          </div>
-        </div>
-        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <div className="nft__item_info">
-            <Skeleton width="80%" height="32px" borderRadius="4px" />
-            <Skeleton width="60%" height="24px" borderRadius="4px" />
-            <Skeleton width="100%" height="16px" borderRadius="4px" />
-            <Skeleton width="100%" height="16px" borderRadius="4px" />
-            <Skeleton width="90%" height="80px" borderRadius="4px" />
-          </div>
-          <div className="nft__item_author">
-            <div className="author_list_pp">
-              <Skeleton width="50px" height="50px" borderRadius="50%" />
+    <div id="wrapper">
+      <div className="no-bottom no-top" id="content">
+        <div id="top"></div>
+        <section aria-label="section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 text-center">
+                <Skeleton width="100%" height="400px" borderRadius="10px" />
+              </div>
+              <div className="col-md-6">
+                <div className="item_info">
+                  <Skeleton width="80%" height="32px" borderRadius="4px" />
+                  <div className="item_info_counts">
+                    <div className="item_info_views">
+                      <i className="fa fa-eye"></i>
+                      <Skeleton width="30px" height="16px" borderRadius="4px" />
+                    </div>
+                    <div className="item_info_like">
+                      <i className="fa fa-heart"></i>
+                      <Skeleton width="30px" height="16px" borderRadius="4px" />
+                    </div>
+                  </div>
+                  <Skeleton width="100%" height="60px" borderRadius="4px" />
+                  <div className="item__details--flex-row">
+                    <div className="item__details--margin-right">
+                      <h6>Owner</h6>
+                      <div className="item__details--author">
+                        <div className="item__details--author__avatar">
+                          <Skeleton
+                            width="50px"
+                            height="50px"
+                            borderRadius="50%"
+                          />
+                        </div>
+                        <div className="item__details--author__info">
+                          <Skeleton
+                            width="120px"
+                            height="16px"
+                            borderRadius="4px"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item__details--tab tab_simple">
+                    <div className="item__details--tab__content">
+                      <h6>Creator</h6>
+                      <div className="item__details--author">
+                        <div className="item__details--author__avatar">
+                          <Skeleton
+                            width="50px"
+                            height="50px"
+                            borderRadius="50%"
+                          />
+                        </div>
+                        <div className="item__details--author__info">
+                          <Skeleton
+                            width="100px"
+                            height="16px"
+                            borderRadius="4px"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="item__details--spacer"></div>
+                    <h6>Price</h6>
+                    <div className="item__details--price">
+                      <img src="/images/ethereum.svg" alt="" />
+                      <Skeleton width="60px" height="20px" borderRadius="4px" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="author_list_info">
-              <Skeleton width="120px" height="16px" borderRadius="4px" />
-            </div>
           </div>
-          <div className="nft__item_author">
-            <div className="author_list_pp">
-              <Skeleton width="50px" height="50px" borderRadius="50%" />
-            </div>
-            <div className="author_list_info">
-              <Skeleton width="100px" height="16px" borderRadius="4px" />
-            </div>
-          </div>
-          <div className="nft__item_author">
-            <div className="author_list_info">
-              <Skeleton width="150px" height="16px" borderRadius="4px" />
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
